@@ -4,7 +4,7 @@ import { API_URL, API_KEY } from "../../config";
 export const useMovieFetch = movieId => {
   const [state, setState] = useState({});
   const [error, setError] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const fetchData = useCallback(async () => {
     setError(false);
